@@ -1,6 +1,10 @@
 {
     "name": "Disposable-ChatRoom",
     "description":"",
+
+    "name": "Disposable Chatroom",
+    "description":"create a temporary chatroom",   
+
     "contributors": [{
         "name": "Sumeet Tokare",
         "githubId": "Sumeet0819"
@@ -25,8 +29,8 @@
         "githubId": ""
     },
     {
-        "name": "",
-        "githubId": ""
+        "name": "Nikita",
+        "githubId": "nikita7526"
     },
     {
         "name": "Navneet Sharma",
