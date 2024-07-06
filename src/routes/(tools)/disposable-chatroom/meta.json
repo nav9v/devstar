@@ -1,6 +1,6 @@
 {
-    "name": "",
-    "description":"",
+    "name": "Disposable Chatroom",
+    "description":"create a temporary chatroom",   // if anyone have better description, please update it.
     "contributors": [{
         "name": "Sumeet Tokare",
         "githubId": "Sumeet0819"
