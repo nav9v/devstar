@@ -257,6 +257,7 @@ main {
                     <label for="display-name">Display Name</label>
                     <input type="text" id="display-name" bind:value={displayName} placeholder="ex: team-74">
                     <button type="submit">Create Room</button>
+                    
                 </form>
 
                 <div class="instructions">
