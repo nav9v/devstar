@@ -15,10 +15,8 @@ function toggleTheme() {
 
 function handleJoin() {
     if (roomId && userName) {
-        navigate(`/chat/${roomId}`, {
-            state: {
-                userName
-            }
+        navigate(`/disposable-chatroom/chat/${roomId}`, {
+            state: {userName}
         });
     } else {
         alert("Please enter both room ID and user name");
