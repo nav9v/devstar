@@ -126,15 +126,6 @@ main {
     margin: 10px 0;
 }
 
-.settings {
-    padding: 10px 20px;
-    background-color: #aa0ca5;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 20px;
-}
 
 .create-room {
     margin-top: 50px;
@@ -191,9 +182,6 @@ main {
         font-size: 2.5em;
     }
 
-    .settings {
-        padding: 10px 16px;
-    }
 
     .create-room {
         max-width: 100%;
@@ -210,10 +198,6 @@ main {
         font-size: 2em;
     }
 
-    .settings {
-        width: 100%;
-        padding: 10px;
-    }
 
     .create-room input {
         padding: 8px;
@@ -222,6 +206,7 @@ main {
     .create-room button {
         padding: 10px;
     }
+
 }
 </style>
 
@@ -246,7 +231,6 @@ main {
                 <h1>Disposable Chatroom</h1>
                 <p>Chat private. Chat free.</p>
                 <p>Create your own Disposable Chatroom. It disposes after the last person leaves.</p>
-                <button class="settings">Settings</button>
             </section>
 
             <section class="create-room">
@@ -256,8 +240,10 @@ main {
                     <input type="text" id="room-name" bind:value={roomName} placeholder="The Chatroom">
                     <label for="display-name">Display Name</label>
                     <input type="text" id="display-name" bind:value={displayName} placeholder="ex: team-74">
-                    <button type="submit">Create Room</button>
-                    
+                    <div style="display: flex; gap: 10px;">
+                        <button type="submit" style="flex-grow: 1;">Create Room</button>
+                        <button type="button" style="flex-grow: 1;">Join Room</button>
+                    </div>
                 </form>
 
                 <div class="instructions">
