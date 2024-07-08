@@ -1,59 +1,143 @@
 <script>
-import {
-    onMount
-} from 'svelte';
+import {onMount} from "svelte";
+import {navigate} from "svelte-routing";
 
 let isDarkMode = false;
-let roomName = '';
-let displayName = '';
+let roomId = "";
+let userName = "";
 
 // Function to toggle dark mode
 function toggleTheme() {
     isDarkMode = !isDarkMode;
-    document.body.classList.toggle('light-mode');
-    document.body.classList.toggle('dark-mode');
-
+    document.body.classList.toggle("light-mode");
+    document.body.classList.toggle("dark-mode");
 }
 
+function handleJoin() {
+    if (roomId && userName) {
+        navigate(`/chat/${roomId}`, {
+            state: {
+                userName
+            }
+        });
+    } else {
+        alert("Please enter both room ID and user name");
+    }
+}
 // Function to handle form submission (create room logic)
-function createRoom() {
-    console.log('Creating room:', roomName, displayName);
-
+function handleCreate() {
+    roomId = Math.random().toString(36).substr(2, 9);
+    handleJoin();
 }
 
 //check user's preferred theme or default to light
 onMount(() => {
     // Example using prefers-color-scheme
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const prefersDark = window.matchMedia(
+        "(prefers-color-scheme: dark)"
+    ).matches;
     isDarkMode = prefersDark;
 });
 </script>
 
+<svelte:head>
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        />
+    </svelte:head>
+
+    <body class:dark-mode={isDarkMode}>
+        <header>
+            <div class="logo">Chatroom</div>
+            <button class="theme-btn" on:click={toggleTheme}>
+                {#if isDarkMode}
+                <i class="fas fa-sun"></i>
+                {:else}
+                <i class="fas fa-moon"></i>
+                {/if}
+            </button>
+        </header>
+
+        <main>
+            <section class="intro">
+                <h1>Disposable Chatroom</h1>
+                <p>Chat private. Chat free.</p>
+                <p>
+                    Create your own Disposable Chatroom. It disposes after the last person
+                    leaves.
+                </p>
+            </section>
+
+            <section class="create-room">
+                <h2>Create Your Room</h2>
+                <form on:submit|preventDefault={roomId}>
+                    <label for="room-name">Room Name</label>
+                    <input
+                        type="text"
+                        id="room-name"
+                        bind:value={roomId}
+                        placeholder="Room ID"
+                        />
+                    <label for="display-name">Display Name</label>
+                    <input
+                        type="text"
+                        id="display-name"
+                        bind:value={userName}
+                        placeholder="ex: team-74"
+                        />
+                    <div style="display: flex; gap: 10px;">
+                        <button on:click={handleJoin} type="submit" style="flex-grow: 1;">Create Room</button>
+                        <button on:click={handleCreate} type="button" style="flex-grow: 1;">Join Room</button>
+                    </div>
+                </form>
+
+                <div class="instructions">
+                    <p><strong>Remember:</strong></p>
+                    <ol>
+                        <li>
+                            This is a Disposable Chatroom. Nothing is saved and it's encrypted
+                            too.
+                        </li>
+                        <li>
+                            Invite anyone to this chatroom by sharing the QR Code provided or
+                            copying the invite link by clicking on the button next to the link.
+                        </li>
+                        <li>Enjoy!</li>
+                    </ol>
+                </div>
+            </section>
+        </main>
+    </body>
+
 <style>
 /*Tailwind CSS classes here */
-@import url('https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/plus-jakarta-display.min.css');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
-@import url('https://fonts.cdnfonts.com/css/cascadia-code');
+@import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/plus-jakarta-display.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap");
+@import url("https://fonts.cdnfonts.com/css/cascadia-code");
 
 /* Base styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Plus Jakarta Display', sans-serif, 'Noto Color Emoji';
+    font-family: "Plus Jakarta Display", sans-serif, "Noto Color Emoji";
 }
 
 body {
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Plus Jakarta Display', sans-serif, 'Noto Color Emoji';
+    font-family: "Plus Jakarta Display", sans-serif, "Noto Color Emoji";
     width: 100%;
     height: 100%;
     overflow-x: hidden;
     font-size: 100%;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease;
 }
+
 body:not(.dark-mode) {
     background-color: #fff;
     color: #000;
@@ -126,7 +210,6 @@ main {
     margin: 10px 0;
 }
 
-
 .create-room {
     margin-top: 50px;
     max-width: 400px;
@@ -152,7 +235,7 @@ main {
     border: 1px solid #333;
     border-radius: 5px;
     background-color: #000;
-    color: initial
+    color: initial;
 }
 
 .create-room button {
@@ -183,7 +266,6 @@ main {
         font-size: 2.5em;
     }
 
-
     .create-room {
         max-width: 100%;
     }
@@ -199,7 +281,6 @@ main {
         font-size: 2em;
     }
 
-
     .create-room input {
         padding: 8px;
     }
@@ -207,54 +288,5 @@ main {
     .create-room button {
         padding: 10px;
     }
-
 }
 </style>
-
-<svelte:head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    </svelte:head>
-
-    <body class:dark-mode={isDarkMode}>
-        <header>
-            <div class="logo">Chatroom</div>
-            <button class="theme-btn" on:click={toggleTheme}>
-                {#if isDarkMode}
-                <i class="fas fa-sun"></i>
-                {:else}
-                <i class="fas fa-moon"></i>
-                {/if}
-            </button>
-        </header>
-
-        <main>
-            <section class="intro">
-                <h1>Disposable Chatroom</h1>
-                <p>Chat private. Chat free.</p>
-                <p>Create your own Disposable Chatroom. It disposes after the last person leaves.</p>
-            </section>
-
-            <section class="create-room">
-                <h2>Create Your Room</h2>
-                <form on:submit|preventDefault={createRoom}>
-                    <label for="room-name">Room Name</label>
-                    <input type="text" id="room-name" bind:value={roomName} placeholder="The Chatroom">
-                    <label for="display-name">Display Name</label>
-                    <input type="text" id="display-name" bind:value={displayName} placeholder="ex: team-74">
-                    <div style="display: flex; gap: 10px;">
-                        <button type="submit" style="flex-grow: 1;">Create Room</button>
-                        <button type="button" style="flex-grow: 1;">Join Room</button>
-                    </div>
-                </form>
-
-                <div class="instructions">
-                    <p><strong>Remember:</strong></p>
-                    <ol>
-                        <li>This is a Disposable Chatroom. Nothing is saved and it's encrypted too.</li>
-                        <li>Invite anyone to this chatroom by sharing the QR Code provided or copying the invite link by clicking on the button next to the link.</li>
-                        <li>Enjoy!</li>
-                    </ol>
-                </div>
-            </section>
-        </main>
-    </body>
