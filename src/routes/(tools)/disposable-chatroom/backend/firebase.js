@@ -1,1 +1,1 @@
-// Supabase client setup
+// firebase client setup
