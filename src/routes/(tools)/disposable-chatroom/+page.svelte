@@ -44,16 +44,16 @@ onMount(() => {
     font-family: 'Plus Jakarta Display', sans-serif, 'Noto Color Emoji';
 }
 
-body,
-html {
+body {
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Display', sans-serif, 'Noto Color Emoji';
     width: 100%;
     height: 100%;
     overflow-x: hidden;
     font-size: 100%;
-    transition: background-color 0.3s, ease, color 0.3s;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
-
-/* Light mode styles */
 body:not(.dark-mode) {
     background-color: #fff;
     color: #000;

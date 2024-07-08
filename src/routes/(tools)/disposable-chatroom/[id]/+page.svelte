@@ -1,3 +1,4 @@
+<!-- // Main chat page component  -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -297,7 +298,7 @@
             </div>
             <div class="participant">
                 <div class="status online"></div>
-                <img src="/src/routes/(tools)/disposable-chatroom/avatar-image-female.png" alt="Nikita">
+                <img src="/src/routes/(tools)/disposable-chatroom/avatar-image-female.png" alt="Jahnvi Patil">
                 <div>Jahnvi Patil</div>
             </div>
         </div>
