@@ -12,7 +12,7 @@
       $nav = 'messages';
     }}
   >
-    <label for="nickname" id="name-label">Enter a nickname 👻</label>
+    <label for="nickname" id="name-label" >Enter a nickname 👻</label>
     <Input
       bind:value={$user}
       maxLength="50"
@@ -31,15 +31,19 @@
 
 <style>
   main {
-    margin: auto 0;
+    margin: 8em;
   }
 
   form {
-    padding: 2em;
+    padding: 8em;
   }
 
   label {
-    padding: 1em;
-    font-size: 14px;
-  }
+  padding: 5px;
+  font-size: 18px;
+  display: block; 
+  font-weight: 1000;
+}
+
+
 </style>
