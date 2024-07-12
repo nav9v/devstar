@@ -36,6 +36,18 @@
   function scrollToBottom() {
     main.scrollTo({ left: 0, top: main.scrollHeight });
   }
+  function deleteChatPage() {
+  Object.keys(store).forEach(msgId => {
+    gun.get($chatTopic).get(msgId).put(null);
+  });
+
+  gun.get($chatTopic).put(null);
+
+  chats = [];
+  store = {};
+
+  
+}
 
   function handleScroll(e) {
     showScrollToBottom =
@@ -99,6 +111,8 @@
     gun.get($chatTopic).off();
   });
 </script>
+
+<button on:click={deleteChatPage}>Delete Chat Page</button>
 
 <main bind:this={main} on:scroll={handleScroll}>
   {#if isLoading}
