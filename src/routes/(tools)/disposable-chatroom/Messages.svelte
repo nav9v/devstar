@@ -111,9 +111,7 @@
     gun.get($chatTopic).off();
   });
 </script>
-
 <button on:click={deleteChatPage}>Delete Chat Page</button>
-
 <main bind:this={main} on:scroll={handleScroll}>
   {#if isLoading}
     <Spinner />
@@ -124,6 +122,7 @@
       handleDelete(e.detail);
     }}
   />
+
 </main>
 
 <MessageInput
@@ -143,5 +142,16 @@
     width: 100%;
     padding: 0.5em 1em 0.5em 1em;
     overflow-y: auto;
+  }
+  button{
+    width: fit-content;
+    background-color: red;
+    color: white;
+    border-radius: 0.5em;
+    padding: 0.5em;
+    margin: 0.5em 0;
+  }
+  button:hover{
+    background-color: black;
   }
 </style>

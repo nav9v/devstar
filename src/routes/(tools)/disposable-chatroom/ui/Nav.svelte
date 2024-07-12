@@ -29,7 +29,6 @@
     <slot />
   </h1>
 </nav>
-
 <style>
   nav {
     position: -webkit-sticky;
