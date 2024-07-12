@@ -217,7 +217,7 @@
     "disposable-chatroom": {
         "name": "Disposable Chatroom",
         "link": "/disposable-chatroom",
-        "description": "create a temporary chatroom",
+        "description": "A decentralized, peer-to-peer chatroom where users can join specific conversations by simply entering a chosen nickname and the corresponding room name. Within the chatroom, users can freely exchange text messages and have the ability to delete any messages they've sent.",
         "contributors": [
             {
                 "name": "Sumeet Tokare",
