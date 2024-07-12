@@ -1,6 +1,5 @@
 <script>
 import { Avatar } from "flowbite-svelte";
-import { Router, Route } from 'svelte-routing';
 
   export let data;
 </script>

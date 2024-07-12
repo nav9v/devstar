@@ -10,5 +10,3 @@ plugins: [sveltekit(), isoImport()],
 	}
 });
 
-
-
