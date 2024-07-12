@@ -6,6 +6,8 @@
   import Page from "./ui/Page.svelte";
   import Footer from "./Footer.svelte";
 </script>
+<div class="card gap-16 items-center mx-auto max-w-screen-xl ">
+	<!-- Add tool here -->
 
 {#if $nav === "settings"}
   <Page>
@@ -27,3 +29,8 @@
     <Messages />
   </Page>
 {/if}
+</div>
+
+<style>
+
+</style>
