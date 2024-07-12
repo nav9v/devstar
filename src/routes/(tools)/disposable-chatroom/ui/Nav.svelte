@@ -37,7 +37,8 @@
     z-index: 10;
     top: 0;
     margin: 0;
-    padding: 0.75em 0;
+    width: 100%;
+    padding: 1em;
     display: flex;
     border-bottom: 1px solid #eee;
     background-color: white;

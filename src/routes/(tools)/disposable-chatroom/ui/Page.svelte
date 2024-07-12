@@ -1,10 +1,11 @@
-<div class="container">
+<div class="container-1">
   <slot></slot>
 </div>
 
 <style>
-  .container {
+  .container-1 {
     height: 400px;
+    width: 100%;
     margin: 0 auto;
     align-items: center;
     justify-content: center;
