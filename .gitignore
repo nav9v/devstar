@@ -18,3 +18,4 @@ static/samples/*
 .vercel
 .pnpm-lock.yaml
 /.vscode
+/radata
