@@ -4,8 +4,10 @@
 
 <style>
   .container {
-    height: 820px;
+    height: 400px;
     margin: 0 auto;
+    align-items: center;
+    justify-content: center;
     display: flex;
     flex-direction: column;
     max-width: 1200px;

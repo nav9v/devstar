@@ -31,11 +31,11 @@
 
 <style>
   main {
-    margin: 8em;
+    margin: 5em;
   }
 
   form {
-    padding: 8em;
+    padding: 0em;
   }
 
   label {

@@ -71,13 +71,13 @@
 
 <style>
   .input-with-button {
-    position: relative;
+  position: relative;
   }
 
   .input {
     padding: 0.6em 2em 0.6em 0.6em;
     border-radius: 1em;
-    width: 100%;
+    width: 250px;
     resize: none;
     overflow-x: hidden;
   }
@@ -94,7 +94,7 @@
   }
 
   .submit {
-    position: absolute;
+    position: relative;
     top: 0.4em;
     right: 0.4em;
     width: 1.5em;

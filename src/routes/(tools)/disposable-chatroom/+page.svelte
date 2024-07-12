@@ -6,7 +6,7 @@
   import Page from "./ui/Page.svelte";
   import Footer from "./Footer.svelte";
 </script>
-<div class="card gap-16 items-center mx-auto max-w-screen-xl overflow-hidden rounded-lg w-full">
+<div class="card gap-4 items-center overflow-hidden rounded-lg ">
 
 {#if $nav === "settings"}
   <Page>
