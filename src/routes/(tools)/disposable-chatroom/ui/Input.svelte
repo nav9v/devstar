@@ -75,9 +75,10 @@
   }
 
   .input {
+    margin-top: 10px;
     padding: 0.6em 2em 0.6em 0.6em;
     border-radius: 1em;
-    width: 250px;
+    width: 300px;
     resize: none;
     overflow-x: hidden;
   }
@@ -94,9 +95,9 @@
   }
 
   .submit {
-    position: relative;
-    top: 0.1em;
-    right: 2.5em;
+    position: absolute;
+    top: 1.5em;
+    right: 0.5em;
     width: 1.5em;
     height: 1.5em;
     background: no-repeat 50% 50% url(/up.svg);

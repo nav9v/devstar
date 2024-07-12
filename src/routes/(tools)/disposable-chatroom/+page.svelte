@@ -32,10 +32,9 @@
 
 <style>
   .small-card-1 {
-        width: 500px; /* Adjust the width as needed */
+        width: 80%; /* Adjust the width as needed */
         padding: 16px; /* Adjust the padding as needed */
         margin: 0 auto; /* Center the card horizontally */
-        box-shadow: 0 5px 10px #8f8f8f;
         border-radius: 8px; /* Adjust the border-radius as needed */
         overflow: hidden;
         max-width: 100%;
