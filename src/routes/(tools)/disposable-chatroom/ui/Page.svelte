@@ -1,25 +1,14 @@
-<script>
-  import { fade } from "svelte/transition";
-</script>
-
-<div class="animation" in:fade out:fade>
-  <div class="container">
-    <slot />
-  </div>
+<div class="container">
+  <slot></slot>
 </div>
 
 <style>
-  .animation {
-    position: absolute;
-    height: 100%;
-    width: 100vw;
-  }
   .container {
-    height: 100%;
+    height: 820px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    max-width: 640px;
+    max-width: 1200px;
     background-color: white;
   }
 </style>

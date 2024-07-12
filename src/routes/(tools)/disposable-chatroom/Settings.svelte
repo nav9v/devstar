@@ -12,14 +12,14 @@
       $nav = 'messages';
     }}
   >
-    <label id="name-label">Enter a nickname 👻</label>
+    <label for="nickname" id="name-label">Enter a nickname 👻</label>
     <Input
       bind:value={$user}
       maxLength="50"
       placeholder="Iron Man"
       ariaLabelledBy="name-label"
     />
-    <label id="chat-label">Room Name</label>
+    <label for="chat-input" id="chat-label">Room Name</label>
     <Input
       bind:value={$chatTopic}
       maxLength="50"
