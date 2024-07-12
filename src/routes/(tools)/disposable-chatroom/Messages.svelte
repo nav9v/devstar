@@ -144,12 +144,14 @@
     overflow-y: auto;
   }
   button{
+    position: relative;
     width: fit-content;
     background-color: red;
     color: white;
     border-radius: 0.5em;
     padding: 0.5em;
     margin: 0.5em 0;
+    right: 0.5em;
   }
   button:hover{
     background-color: black;
