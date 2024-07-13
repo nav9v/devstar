@@ -38,13 +38,6 @@
     grid-template-areas: "newField newType newDel";
   }
 
-  .newField {
-    grid-area: newField;
-  }
-
-  .newType {
-    grid-area: newType;
-  }
 
   .delete {
     margin: 0;
