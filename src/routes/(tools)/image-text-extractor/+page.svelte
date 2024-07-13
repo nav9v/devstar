@@ -32,8 +32,7 @@
 			document.body.removeChild(textarea);
 		}
 	}
-      
-       
+
 	function downloadText() {
 		if (output.length > 0) {
 		const filename = "devstar_output.txt";
@@ -60,7 +59,6 @@
 	}
 
 </script>
-  
 
 <section class="bg-white dark:bg-gray-900">
     <div class="py-8 px-4 mx-auto max-w-screen-xl lg:px-12">

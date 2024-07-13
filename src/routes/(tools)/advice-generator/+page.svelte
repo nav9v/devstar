@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import { Spinner } from 'flowbite-svelte';
-  	
+	
 	export let data;
 	let advice: string | null = null;
 

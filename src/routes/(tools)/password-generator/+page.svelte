@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { Label, Range, Checkbox } from 'flowbite-svelte';
 
-	import Copy from '$lib/Copy.svelte';
+	import Copy from '../../../lib/Copy.svelte';
 
 	export let data;
 

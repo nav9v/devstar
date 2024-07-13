@@ -17,13 +17,13 @@
 	};
 
 	let selectedFormat = ''; 
-	let inputFile, fileName='', extension='';
+	let inputFile: BlobPart, fileName='', extension='';
     let outputFile='', fileURL='';
 	let supportedFormats = fileFormats;
     let imageSrc = '';
     let downloadUrl = '';
 
-	const getFileFormat = (e) =>{
+	const getFileFormat = (e: { target: { files: any[]; }; }) =>{
         outputFile='';
 		inputFile = e.target.files[0];
 		// console.log(inputFile);
@@ -35,7 +35,7 @@
 	
 			console.log('File Name:', fileName, extension);
 			for(let format in fileFormats){
-				fileFormats[format]['outputFormat'].forEach((ext)=>{
+				fileFormats[format]['outputFormat'].forEach((ext: string)=>{
 					console.log(ext);
 					if(extension===ext){
 						supportedFormats = fileFormats[format];
@@ -95,11 +95,16 @@
 		document.body.removeChild(downloadLink);
 	}
 
-	const convertFormat = (event) => {
+	const convertFormat = (event: { preventDefault: () => void; }) => {
 		event.preventDefault();
 		convertFile();
 	}
 	export let data;
+
+
+  function previewFile(event: MouseEvent & { currentTarget: EventTarget & HTMLButtonElement; }) {
+    throw new Error('Function not implemented.');
+  }
 </script>
 
 

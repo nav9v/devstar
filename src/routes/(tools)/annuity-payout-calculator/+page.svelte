@@ -3,7 +3,7 @@
 </svelte:head>
 <script lang="ts">
 	import { Label, Input, Select } from 'flowbite-svelte';
-	export let data;
+	export let data = undefined;
 	let principalAmount = 500000;
 	let rate = 6; // interest rate
 	let years= 10; // time period

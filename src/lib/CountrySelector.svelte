@@ -38,7 +38,7 @@
         <Chevron>Select country</Chevron>
     {/if}
 </Button>
-<Dropdown ulClass="overflow-y-auto h-28 px-3 pb-3 text-sm" bind:open={dropdownOpen}>
+<Dropdown bind:open={dropdownOpen}>
     <div slot="header" class="p-3">
         <Search size="md" bind:value={searchQuery} on:input={search} class="rounded-lg border"/>
     </div>

@@ -53,11 +53,11 @@
 <section>
 	<div class="bg-[#323A49] md:w-1/3 text-center p-4 rounded-lg mx-auto">
 		<ul class="flex justify-center text-xl">
-			<li class:underline={currentTab === 'pomodoro'} on:click={() => tab('pomodoro')} class="p-3 cursor-pointer underline-offset-8 text-white font-medium">Pomodoro</li>
-			<li class:underline={currentTab === 'shortBreak'} on:click={() => tab('shortBreak')} class="p-3 cursor-pointer underline-offset-8 text-white font-medium">
+			<li class:underline={currentTab === 'pomodoro'} on:click={() => tab('pomodoro')} on:keydown={() => {}} class="p-3 cursor-pointer underline-offset-8 text-white font-medium">Pomodoro</li>
+			<li class:underline={currentTab === 'shortBreak'} on:click={() => tab('shortBreak')} on:keydown={() => {}} class="p-3 cursor-pointer underline-offset-8 text-white font-medium">
 				Short Break
 			</li>
-			<li class:underline={currentTab === 'longBreak'} on:click={() => tab('longBreak')} class="p-3 cursor-pointer underline-offset-8 text-white font-medium">
+			<li class:underline={currentTab === 'longBreak'} on:click={() => tab('longBreak')} on:keydown={() => {}} class="p-3 cursor-pointer underline-offset-8 text-white font-medium">
 				Long Break
 			</li>
 		</ul>

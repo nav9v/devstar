@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { Label, Textarea } from 'flowbite-svelte';
-	import Copy from '$lib/Copy.svelte';
+	import Copy from '../../../lib/Copy.svelte';
   	
 	export let data;
 
@@ -8,12 +8,12 @@
 	let string = '';
 
 	function handleFileInputChange(event) {
-		fileToBase64(event.target.files[0]).then(base64String => {
+		fileToBase64(event.target.files[0]).then((base64String: string) => {
 			string = base64String;
 		}).catch(error => {
 			console.error(error);
 		});
-  	}
+	}
 
 	function fileToBase64(file) {
 		return new Promise((resolve, reject) => {

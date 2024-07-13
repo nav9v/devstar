@@ -4,7 +4,7 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import { Label, Input } from 'flowbite-svelte';
-	import Copy from '$lib/Copy.svelte';
+	import Copy from "../../../lib/Copy.svelte";
 	export let data;
 
 	const animationGroup = {

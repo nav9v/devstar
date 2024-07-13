@@ -7,7 +7,7 @@
     ButtonGroup,
     Button,
   } from "flowbite-svelte";
-  import Copy from "$lib/Copy.svelte";
+  import Copy from "../../../lib/Copy.svelte";
   
   export let data;
 

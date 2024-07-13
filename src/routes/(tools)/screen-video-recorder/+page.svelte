@@ -66,7 +66,9 @@
 <div class="card mx-auto max-w-screen-xl overflow-hidden rounded-lg">
 	<div class="h-full flex rounded-lg relative justify-center items-center">
 		{#if src}
-			<video class="w-full h-auto" controls {src} />
+			<video class="w-full h-auto" controls {src}>
+				<track kind="captions" />
+			</video>
 			<Button color="green" on:click={download} class="absolute top-4 right-4">Download</Button>
 		{:else}
 			<VideoPlaceholder size='xxl' class="w-full max-w-full h-96"/>

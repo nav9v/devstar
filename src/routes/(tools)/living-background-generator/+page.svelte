@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { Label, Range } from 'flowbite-svelte';
 	import { onMount } from 'svelte';
-	import Copy from '$lib/Copy.svelte';
+	import Copy from '../../../lib/Copy.svelte';
 
 	export let data;
 
@@ -143,7 +143,7 @@
 			? clrList.length > 1
 				? `background-image: radial-gradient(ellipse var(--zoom) var(--zoom) at center, ${clrList.join(
 						', '
-				  )});`
+		)});`
 				: `background-color: ${clrList};`
 			: `background-color: ${clrList};`;
 
@@ -188,7 +188,7 @@
             ${bgGradient}
             background-size: 400% 400%;
             animation: gradient ${speed}s ease infinite;
-          }
+        }
   
           @keyframes gradient {
             0% {

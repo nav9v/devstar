@@ -1,7 +1,7 @@
 <script lang="ts">
-  	import { Label, Input, Range } from 'flowbite-svelte';
+    import { Label, Input, Range } from 'flowbite-svelte';
 
-	import Copy from '$lib/Copy.svelte';
+	import Copy from '../../../lib/Copy.svelte';
 
 	export let data;
 
