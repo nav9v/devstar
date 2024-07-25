@@ -1,6 +1,6 @@
 [![Screenshot of the plaform](platform-screenshot.png)](https://developerstar.com)
 
-# Developerstar
+## Developerstar
 
 Welcome to the ultimate solution for developers seeking to enhance their productivity and streamline their workflows. Our free online developer toolkit empowers you to unlock your full potential with a comprehensive collection of top-notch tools. Say goodbye to the struggles of searching for the right tools and embrace the convenience of our user-friendly platform.
 
@@ -9,6 +9,18 @@ As fellow developers, we understand the daily challenges of finding the perfect 
 Our mission is to lead the way in providing developer tools that empower software developers to overcome obstacles and work more efficiently. We are dedicated to streamlining workflows and increasing productivity, envisioning a future where software development is faster, more accessible, and more innovative than ever before.
 
 Join us on this journey to maximize your efficiency and productivity as a developer. Experience the power of our developer toolkit today!
+
+
+
+# Disposable Chatroom Project - Team 74
+
+Our team, Team 74, developed a disposable chatroom using Svelte and the GunDB library. Users can enter a room name and a username to join a chat room. Within the chat room, users can send messages, delete messages, and, at the end, any user can dispose of the room by clicking the delete button.
+
+![Screenshot 1](https://i.postimg.cc/tC0W6Bxd/Screenshot-2024-07-12-204633.png)
+
+![Screenshot 2](https://i.postimg.cc/ydt9vPrH/Screenshot-2024-07-12-204737.png)
+
+---
 
 ## Powered by
 
@@ -48,17 +60,3 @@ npm  run  dev
 
 ```
 
-## Contributing
-
-Contributions are always welcome!
-
-See [CONTRIBUTING.md](docs/CONTRIBUTING.md) for ways to get started.
-
-Please adhere to this project's [Code of Conduct](docs/CODE_OF_CONDUCT.md).
-
-## Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=hannansatopay/devstar&type=Date)](https://star-history.com/#hannansatopay/devstar&Date)
-
-## License
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
