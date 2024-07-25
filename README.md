@@ -10,8 +10,6 @@ Our mission is to lead the way in providing developer tools that empower softwar
 
 Join us on this journey to maximize your efficiency and productivity as a developer. Experience the power of our developer toolkit today!
 
-
-
 # Disposable Chatroom Project - Team 74
 
 Our team, Team 74, developed a disposable chatroom using Svelte and the GunDB library. Users can enter a room name and a username to join a chat room. Within the chat room, users can send messages, delete messages, and, at the end, any user can dispose of the room by clicking the delete button.
