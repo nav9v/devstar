@@ -10,9 +10,22 @@ Our mission is to lead the way in providing developer tools that empower softwar
 
 Join us on this journey to maximize your efficiency and productivity as a developer. Experience the power of our developer toolkit today!
 
-# Disposable Chatroom Project - Team 74
+# ⭐ Disposable Chatroom Project - Team 74 ⭐
 
 Our team, Team 74, developed a disposable chatroom using Svelte and the GunDB library. Users can enter a room name and a username to join a chat room. Within the chat room, users can send messages, delete messages, and, at the end, any user can dispose of the room by clicking the delete button.
+
+### Check out our project at ⚡ [GitHub - nav9v/craftchat](https://github.com/nav9v/craftchat)
+
+## See our chat app preview at 🪼 [CraftChat on Vercel](https://craftchat-seven.vercel.app/)
+
+## This project was made by our team for [DevStar](https://github.com/nav9v/devstar)
+
+## Thanks to all contributors:
+- [iamnikitaa](https://github.com/iamnikitaa)
+- [Sumeet0819](https://github.com/Sumeet0819)
+- [Janhavi1225-tq](https://github.com/Janhavi1225-tq)
+- [Darshna-Panchal](https://github.com/Darshna-Panchal)
+- [Urvisha166](https://github.com/Urvisha166)
 
 ![Screenshot 1](https://i.postimg.cc/tC0W6Bxd/Screenshot-2024-07-12-204633.png)
 
