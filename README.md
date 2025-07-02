@@ -16,7 +16,7 @@ Our team, Team 74, developed a disposable chatroom using Svelte and the GunDB li
 
 ### Check out our project at ⚡ [GitHub - nav9v/craftchat](https://github.com/nav9v/craftchat)
 
-## See our chat app preview at 🪼 [CraftChat on Vercel](https://craftchat-seven.vercel.app/)
+## See our chat app preview at 🪼 [CraftChat on Vercel](https://craft-chat.vercel.app/)
 
 ## This project was made by our team for [DevStar](https://github.com/nav9v/devstar)
 
